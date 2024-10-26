@@ -7,24 +7,16 @@ valorSorteio = Math.random() * 100;
 
 jogo.addEventListener("click", function (event) {
     if (valorDigitado.value > 100) {
-        alert("Digite um número entre 1 e 100")
+        alert("Digite um número entre 1 e 100");
     } else {
         if (i > 10) {
             alert("Não tente mais. Dê um refresh na tela");
         } else if (valorDigitado.value == Math.trunc(valorSorteio)) {
-            escreveTela(
-                valorDigitado.value,
-                "Acertou",
-                "Dê um refresh e jogue novamente"
-            );
+            escreveTela(valorDigitado.value,"Acertou","Dê um refresh e jogue novamente");
             i = 11;
             alert("Acertou");
         } else if (i == 10) {
-            escreveTela(
-                valorDigitado.value,
-                "Terminou",
-                "Dê um refresh e jogue novamente"
-            );
+            escreveTela(valorDigitado.value,"Terminou","Dê um refresh e jogue novamente");
             i++;
         } else {
             verificaPerto(valorDigitado.value, Math.trunc(valorSorteio));
@@ -37,24 +29,16 @@ jogo.addEventListener("click", function (event) {
 valorDigitado.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         if (valorDigitado.value > 100) {
-            alert("Digite um número entre 1 e 100")
+            alert("Digite um número entre 1 e 100");
         } else {
             if (i > 10) {
                 alert("Não tente mais. Dê um refresh na tela");
             } else if (valorDigitado.value == Math.trunc(valorSorteio)) {
-                escreveTela(
-                    valorDigitado.value,
-                    "Acertou",
-                    "Dê um refresh e jogue novamente"
-                );
+                escreveTela(valorDigitado.value,"Acertou","Dê um refresh e jogue novamente");
                 i = 11;
                 alert("Acertou");
             } else if (i == 10) {
-                escreveTela(
-                    valorDigitado.value,
-                    "Terminou",
-                    "Dê um refresh e jogue novamente"
-                );
+                escreveTela(valorDigitado.value,"Terminou","Dê um refresh e jogue novamente");
                 i++;
             } else {
                 verificaPerto(valorDigitado.value, Math.trunc(valorSorteio));
