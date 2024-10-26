@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da sorte</title>
+    <link rel="stylesheet" href="jogo.css">
+</head>
+<body>
+    <script src="./jogo.js" defer></script>
+    <div class="container">
+        <div class="box-pagina">
+            <div class="box-pergunta">
+                <p class="texto-pergunta">Este é um jogo de adinvinhação. Digite um número de 1 a 100 até acertar. Você terá 10 tentativas.</p>
+            </div>
+            <div class="box-enviavalor">
+                <div class="box-digitavalor">
+                    <label>Coloque o valor que você acha aqui</label>
+                    <input type="number" class="input-valordigitado" required="required">
+                </div>
+                <div class="box-botaovalor">
+                    <button class="botaoenviar">Enviar</button>
+                </div>
+            </div>
+            <div class="box-mostraresultado">
+                <table class="tabela-resultado">
+                    <tr>
+                        <th scope="col">Tentativa</th>
+                        <th scope="col">Número</th>
+                        <th scope="col">Resultado</th>
+                        <th scope="col">Instrução</th>
+                    </tr>    
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
